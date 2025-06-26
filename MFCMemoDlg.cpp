@@ -879,7 +879,7 @@ void CMFCMemoDlg::OnSortEarliest()
 		MessageBox(TEXT("需要先打开并解锁备忘录"), TEXT("消息"));
 		return;
 	}
-	sort(AllPlain.begin(), AllPlain.end(), cmpRevLastEdit);
+	sort(AllPlain.begin(), AllPlain.end(), cmpRevEarlist);
 	UpdateList(m_MemoList);
 	EnterPressed = true;
 	OnEnChangeFilter();
