@@ -160,7 +160,7 @@ BOOL CMFCMemoDlg::OnInitDialog()
 	m_MemoFilter.SetWindowText(TEXT("[ 您尚未打开文件 ]"));
 	m_MemoFilter.EnableWindow(false);
 	m_MemoList.EnableWindow(false);
-	m_MemoList.InsertColumn(0, TEXT("创建时间"),0,150);
+	m_MemoList.InsertColumn(0, TEXT("最后修改"),0,150);
 	m_MemoList.InsertColumn(1, TEXT("完成时限"), 0, 150);
 	m_MemoList.InsertColumn(3, TEXT("内容"),0,500);
 	m_nTimer = SetTimer(1, 10000, NULL);
