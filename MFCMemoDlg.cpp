@@ -868,6 +868,9 @@ void CMFCMemoDlg::OnSortLastEdit()
 	}
 	sort(AllPlain.begin(), AllPlain.end(), cmpRevLastEdit);
 	UpdateList(m_MemoList);
+	EnterPressed = true;
+	OnEnChangeFilter();
+	EnterPressed = false;
 }
 
 void CMFCMemoDlg::OnSortEarliest()
@@ -878,6 +881,9 @@ void CMFCMemoDlg::OnSortEarliest()
 	}
 	sort(AllPlain.begin(), AllPlain.end(), cmpRevLastEdit);
 	UpdateList(m_MemoList);
+	EnterPressed = true;
+	OnEnChangeFilter();
+	EnterPressed = false;
 }
 
 
@@ -889,6 +895,9 @@ void CMFCMemoDlg::OnSortContent()
 	}
 	sort(AllPlain.begin(), AllPlain.end(), cmpRevContent);
 	UpdateList(m_MemoList);
+	EnterPressed = true;
+	OnEnChangeFilter();
+	EnterPressed = false;
 }
 
 void CMFCMemoDlg::OnRev()
@@ -899,6 +908,9 @@ void CMFCMemoDlg::OnRev()
 	}
 	reverse(AllPlain.begin(), AllPlain.end());
 	UpdateList(m_MemoList);
+	EnterPressed = true;
+	OnEnChangeFilter();
+	EnterPressed = false;
 }
 
 void CMFCMemoDlg::OnAutoF()
